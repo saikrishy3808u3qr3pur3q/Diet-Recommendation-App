@@ -28,8 +28,23 @@ The project is divided into the following directories:
 
 
 ## Running the Project
+###Step 1 : Start the Node.js Server
+- Once the dependencies are installed and the environment variables are configured, you can start the Node.js server by running:
+  ```bash
+  node app.js
 
-### Step 1: Run the Backend (Flask)
+This will start the server on the port defined in your server.js or .env file (default is 5000).
+
+- To use nodemon for automatic reloading when you make code changes, you can install it globally:
+
+  ```bash
+  npm install -g nodemon
+- Then, run the server with nodemon:
+  ```bash
+  nodemon server.js
+  
+- done
+### Step 2: Run the Backend (Flask)
 1. Navigate to the **Backend** directory.
 2. Install Flask and other dependencies:
    ```bash
@@ -64,4 +79,5 @@ The frontend sends a POST request with a payload similar to this:
   "weight_goal_kg": 10,
   "weeks": 6
 }
+
 
