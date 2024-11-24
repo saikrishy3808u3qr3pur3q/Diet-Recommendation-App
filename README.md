@@ -25,3 +25,13 @@ The project is divided into the following directories:
 - Create a MongoDB Atlas account: [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
 - Set up a cluster and database for storing user data.
 - **Important**: Replace the MongoDB connection string in the `Diet_Recommendation_app\Flutter-Node\config\db.js` backend with your own Atlas connection string.
+
+
+## Running the Project
+
+### Step 1: Run the Backend (Flask)
+1. Navigate to the **Backend** directory.
+2. Install Flask and other dependencies:
+   ```bash
+   pip install -r requirements.txt
+
