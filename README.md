@@ -24,4 +24,4 @@ The project is divided into the following directories:
 ### MongoDB Setup
 - Create a MongoDB Atlas account: [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
 - Set up a cluster and database for storing user data.
-- **Important**: Replace the MongoDB connection string in the `Diet_Recommendation_app\Flutter-Node\config\db.js` backend with your own Atlas connection string. The connection string is typically found in `server.js` or the relevant backend file.
+- **Important**: Replace the MongoDB connection string in the `Diet_Recommendation_app\Flutter-Node\config\db.js` backend with your own Atlas connection string.
