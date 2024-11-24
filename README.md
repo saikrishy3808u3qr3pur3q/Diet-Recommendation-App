@@ -28,7 +28,7 @@ The project is divided into the following directories:
 
 
 ## Running the Project
-###Step 1 : Start the Node.js Server
+### Step 1 : Start the Node.js Server
 - Once the dependencies are installed and the environment variables are configured, you can start the Node.js server by running:
   ```bash
   node app.js
