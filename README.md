@@ -34,4 +34,34 @@ The project is divided into the following directories:
 2. Install Flask and other dependencies:
    ```bash
    pip install -r requirements.txt
+3. Start the flask Server
+   ```bash
+   python app.py
+The Flask server will start running at http://10.0.2.2:5000. Make sure to use this URL in your Flutter app when making requests from an Android emulator.
+   
+### Fetching Recommendations
+The Diet-Recommendation-App frontend makes a POST request to the /recommend endpoint, passing user attributes (age, weight, height, BMI, BMR, etc.) in the request body.
+
+### Example Request Body
+The frontend sends a POST request with a payload similar to this:
+
+```json
+{
+  "attributes": {
+    "age": 10,
+    "weight": 25,
+    "height": 120,
+    "BMI": 17.36,
+    "BMR": 1400,
+    "activity_level": "moderate",
+    "gender_F": 0,
+    "gender_M": 1
+  },
+  "meal_preferences": {
+    "Breakfast": "banana",
+    "Lunch": "salad"
+  },
+  "weight_goal_kg": 10,
+  "weeks": 6
+}
 
