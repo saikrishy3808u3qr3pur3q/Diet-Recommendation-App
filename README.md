@@ -43,7 +43,12 @@ This will start the server on the port defined in your server.js or .env file (d
   ```bash
   nodemon server.js
   
-- done
+- Test the Server Locally
+Once the server is running, you can test it by navigating to http://localhost:5000 in your browser or using tools like Postman or cURL. For example, if you have an endpoint like /recommend for fetching diet recommendations, you can test it by making a request to:
+
+  ```bash
+  http://localhost:5000/recommend
+  
 ### Step 2: Run the Backend (Flask)
 1. Navigate to the **Backend** directory.
 2. Install Flask and other dependencies:
