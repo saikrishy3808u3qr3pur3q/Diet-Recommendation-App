@@ -21,3 +21,11 @@ The project is divided into the following directories:
   ```bash
   cd Flutter-Node
   npm install
+### MongoDB Setup
+- Create a MongoDB Atlas account: [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
+- Set up a cluster and database for storing user data.
+- **Important**: Replace the MongoDB connection string in the `Flutter-Node` backend with your own Atlas connection string. The connection string is typically found in `server.js` or the relevant backend file.
+
+## Folder Structure
+
+Diet-Recommendation-App/ │ ├── Backend/ │ ├── app.py # Flask code for recommendations │ └── requirements.txt # List of required Python libraries │ ├── Frontend/ │ └── Nutri_Track/ │ ├── lib/ │ │ ├── pages/ │ │ │ └── diet_chart_page.dart # Flutter page interacting with backend │ └── pubspec.yaml # Flutter dependencies │ └── Flutter-Node/ ├── server.js # Node.js server code for MongoDB interaction └── package.json # Node.js dependencies
