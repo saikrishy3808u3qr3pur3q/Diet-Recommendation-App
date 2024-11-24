@@ -87,7 +87,7 @@ The frontend sends a POST request with a payload similar to this:
 - You could also use this standalone for a seperate project
 ### Step 3: Run the Frontend/Nutri_Track (Flutter)
 ###
-- Install Flutter Dependencies
+- 1.Install Flutter Dependencies
 - Navigate to the Frontend/Nutri_Track directory:
 
   ```bash
