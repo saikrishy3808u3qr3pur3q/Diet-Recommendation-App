@@ -37,7 +37,7 @@ The project is divided into the following directories:
 3. Start the flask Server
    ```bash
    python app.py
-The Flask server will start running at http://10.0.2.2:5000. Make sure to use this URL in your Flutter app when making requests from an Android emulator.
+The Flask server will start running at http://10.0.2.2:5000. Make sure to use this URL in your Flutter app when making requests from an Android emulator. or you could upadte as per your requirements
    
 ### Fetching Recommendations
 The Diet-Recommendation-App frontend makes a POST request to the /recommend endpoint, passing user attributes (age, weight, height, BMI, BMR, etc.) in the request body.
