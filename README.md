@@ -64,25 +64,45 @@ The Diet-Recommendation-App frontend makes a POST request to the /recommend endp
 
 ### Example Request Body
 The frontend sends a POST request with a payload similar to this:
+- The Sanple Request
+  ```json
+  {
+    "attributes": {
+      "age": 10,
+      "weight": 25,
+      "height": 120,
+      "BMI": 17.36,
+      "BMR": 1400,
+      "activity_level": "moderate",
+      "gender_F": 0,
+      "gender_M": 1
+    },
+    "meal_preferences": {
+      "Breakfast": "banana",
+      "Lunch": "salad"
+    },
+    "weight_goal_kg": 10,
+    "weeks": 6
+  }
+- You could also use this standalone for a seperate project
+### Step 3: Run the Frontend/Nutri_Track (Flutter)
+###
+- Install Flutter Dependencies
+- Navigate to the Frontend/Nutri_Track directory:
 
-```json
-{
-  "attributes": {
-    "age": 10,
-    "weight": 25,
-    "height": 120,
-    "BMI": 17.36,
-    "BMR": 1400,
-    "activity_level": "moderate",
-    "gender_F": 0,
-    "gender_M": 1
-  },
-  "meal_preferences": {
-    "Breakfast": "banana",
-    "Lunch": "salad"
-  },
-  "weight_goal_kg": 10,
-  "weeks": 6
-}
+  ```bash
+  cd path/to/diet-recommendation-app/Frontend/Nutri_Track
+- flutter pub get
+- 2. Update API URLs in Flutter
+- Ensure API URLs in diet_chart_page.dart are set to:
 
+Flask: **http://10.0.2.2:5000** (for Android emulator)
+Node.js: **http://localhost:5000** or **http://10.0.2.2:5000**
+- 3. Start Flutter App
+- Run the app on an emulator or device:
+
+  ``` bash
+  flutter run
+- 4. Verify Communication
+- Check Flutter logs for API requests and responses. Ensure Flask and Node.js servers are handling the requests properly.
 
